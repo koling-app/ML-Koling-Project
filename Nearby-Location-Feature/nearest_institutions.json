@@ -1,0 +1,26 @@
+{
+    "latitude": -5.131,
+    "longitude": 119.405,
+    "nearest_institutions": [
+        {
+            "Instansi": "Polres_KPPP_Makassar",
+            "Jarak": 0.0005007712535895388
+        },
+        {
+            "Instansi": "Polrestabes_Makassar",
+            "Jarak": 0.0005007712535895388
+        },
+        {
+            "Instansi": "Polsek_Ujung_Pandang",
+            "Jarak": 0.0005007712535895388
+        },
+        {
+            "Instansi": "RS_Akademis_Jaury",
+            "Jarak": 0.0005007712535895388
+        },
+        {
+            "Instansi": "RSU_Pelamonia",
+            "Jarak": 0.0005007712535895388
+        }
+    ]
+}
