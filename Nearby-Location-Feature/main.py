@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[ ]:
+
+
 from flask import Flask, request, jsonify
 import tensorflow as tf
 import numpy as np
@@ -40,7 +46,7 @@ scaler = StandardScaler(with_mean=False, with_std=False)
 scaler.fit(df[['Latitude', 'Longitude']])
 
 # Route for predicting nearest institutions
-@app.route('/predict', methods=['POST'])
+@app.route('/calculate', methods=['POST'])
 def predict_nearest_institutions():
     data = request.json
     latitude = data['latitude']
@@ -67,11 +73,14 @@ def predict_nearest_institutions():
                 institution_data = row[['KETERANGAN', 'TLP', 'Latitude', 'Longitude', 'Label']].to_dict()
                 predictions.append(institution_data)
 
-    return jsonify({'predictions': predictions})
+    return jsonify(predictions)
 
 
 if __name__ == '__main__':
     app.run()
+
+
+# In[ ]:
 
 
 
