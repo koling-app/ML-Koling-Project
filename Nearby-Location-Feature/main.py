@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 from flask import Flask, request, jsonify
 import tensorflow as tf
 import numpy as np
@@ -78,9 +72,6 @@ def predict_nearest_institutions():
 
 if __name__ == '__main__':
     app.run()
-
-
-# In[ ]:
 
 
 
